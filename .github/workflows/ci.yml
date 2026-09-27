@@ -1,0 +1,23 @@
+# Managed by repokeeper (https://github.com/vannt-dev/repokeeper). Edits are reported by `repokeeper check`. Keys and jobs you add yourself are left alone.
+
+name: ci
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  commits:
+    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@v0
+  php:
+    uses: vannt-dev/repokeeper/.github/workflows/stack-php.yml@v0
+    with:
+      php-versions: '["8.3","8.4"]'
+      os: '["ubuntu-latest"]'
+      install-command: composer install --no-interaction --no-progress
+      commands: '["composer validate --no-check-publish","composer test"]'
