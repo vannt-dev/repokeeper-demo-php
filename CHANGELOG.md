@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/vannt-dev/repokeeper-demo-php/compare/v1.0.0...v1.0.1) (2026-09-28)
+
+
+### Miscellaneous Chores
+
+* **repokeeper:** update standard to 1.4.1 ([#3](https://github.com/vannt-dev/repokeeper-demo-php/issues/3)) ([5e85e8a](https://github.com/vannt-dev/repokeeper-demo-php/commit/5e85e8a82af398172ce3c35d2475209b89c19681))
+
 ## 1.0.0 (2026-09-28)
 
 
