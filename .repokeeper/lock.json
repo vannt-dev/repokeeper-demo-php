@@ -1,6 +1,6 @@
 {
   "lockVersion": 1,
-  "standard": "1.4.1",
+  "standard": "1.4.2",
   "entries": [
     {
       "id": "block:.gitattributes#editorconfig",
@@ -135,7 +135,7 @@
     {
       "id": "file:release-please-config.json",
       "module": "release",
-      "hash": "f38f719149bdd4b58a7579e2a564d36b89afba0c57b950a6f2fae4fcb989a590",
+      "hash": "56114737bce01abb99467e8c4e7c6daee50af397f270a737bd937bd4c4909691",
       "target": {
         "kind": "file",
         "path": "release-please-config.json"
