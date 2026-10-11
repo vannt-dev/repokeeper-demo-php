@@ -6,7 +6,7 @@ Thanks for helping improve this project.
 
 ## Local setup
 
-Run `composer install`. Then run `npx --yes lefthook@2.1.14 install` once to enable the git hooks (they need Node.js 22 or newer).
+Run `composer install`. Then run `npx --yes lefthook@2.2.1 install` once to enable the git hooks (they need Node.js 22 or newer).
 
 ## Workflow
 
