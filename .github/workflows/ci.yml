@@ -13,18 +13,18 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   commits:
-    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@v0
+    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@ci/ubuntu-26-trial
   php:
     needs: changes
     if: ${{ !cancelled() && needs.changes.outputs.code != 'false' }}
     uses: vannt-dev/repokeeper/.github/workflows/stack-php.yml@v0
     with:
       php-versions: '["8.3","8.4"]'
-      os: '["ubuntu-latest"]'
+      os: '["ubuntu-26.04"]'
       install-command: composer install --no-interaction --no-progress
       commands: '["composer validate --no-check-publish","composer test"]'
   changes:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: read
     outputs:
