@@ -1,6 +1,6 @@
 {
   "lockVersion": 1,
-  "standard": "1.4.5",
+  "standard": "1.5.0",
   "entries": [
     {
       "id": "block:.gitattributes#editorconfig",
@@ -207,6 +207,19 @@
         "keyPath": [
           "jobs",
           "php"
+        ]
+      }
+    },
+    {
+      "id": "yaml:.github/workflows/ci.yml#[\"jobs\",\"result\"]",
+      "module": "ci",
+      "hash": "482d9f5ef3983b936af9a268d0dc3c05f5196fc77d7e9aa9536c637c8c2ad5aa",
+      "target": {
+        "kind": "yaml",
+        "path": ".github/workflows/ci.yml",
+        "keyPath": [
+          "jobs",
+          "result"
         ]
       }
     },
